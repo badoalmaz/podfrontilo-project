@@ -12,6 +12,8 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../../contexts/AuthContext';
+import { ADMIN } from '../../helpers/consts';
 
 const pages = [
   { name: 'PRODUCTS', link: '/products', id: 1 },
@@ -24,6 +26,10 @@ const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
+  const {
+    handleLogout,
+    user: { email },
+  } = useAuth();
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -115,9 +121,39 @@ const Navbar = () => {
                 </Button>
               </Link>
             ))}
+            {/* ==================ADMIN PANEL =================*/}
+            {email === ADMIN ? (
+              <Link to="/admin">
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: 'white', display: 'block' }}
+                >
+                  ADMIN PANEL
+                </Button>
+              </Link>
+            ) : null}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}></Box>
+          <Box sx={{ flexGrow: 0 }}>
+            {email ? (
+              // <Link to="/auth">
+              <Button
+                sx={{ my: 2, color: 'white', display: 'block' }}
+                onClick={handleLogout}
+              >
+                Logout
+              </Button>
+            ) : // </Link>
+            null}
+
+            {email ? null : (
+              <Link to="/auth">
+                <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+                  Login
+                </Button>
+              </Link>
+            )}
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>
