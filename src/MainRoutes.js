@@ -1,60 +1,66 @@
-import React from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom';
-import { useAuth } from './contexts/AuthContext';
-import { ADMIN } from './helpers/consts';
-import AboutUsPage from './pages/AboutUsPage';
-import AdminPage from './pages/AdminPage';
-import AuthPage from './pages/AuthPage';
-import CartPage from './pages/CartPage';
-import EditProductPage from './pages/EditProductPage';
-import HomePage from './pages/HomePage';
-import ProductDetailsPage from './pages/ProductDetailsPage';
-import ProductsPage from './pages/ProductsPage';
+import React from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
+import Contacts from "./components/Contacts/Contacts";
+import { useAuth } from "./contexts/AuthContext";
+import { ADMIN } from "./helpers/consts";
+import AboutUsPage from "./pages/AboutUsPage";
+import AdminPage from "./pages/AdminPage";
+import AuthPage from "./pages/AuthPage";
+import CartPage from "./pages/CartPage";
+import EditProductPage from "./pages/EditProductPage";
+import HomePage from "./pages/HomePage";
+import ProductDetailsPage from "./pages/ProductDetailsPage";
+import ProductsPage from "./pages/ProductsPage";
 
 const MainRoutes = () => {
   const { user } = useAuth();
   console.log(user);
   const PUBLIC_ROUTES = [
     {
-      link: '/',
+      link: "/",
       element: <HomePage />,
       id: 1,
     },
     {
-      link: '/aboutus',
+      link: "/aboutus",
       element: <AboutUsPage />,
       id: 2,
     },
     {
-      link: '/auth',
+      link: "/auth",
       element: <AuthPage />,
       id: 3,
     },
     {
-      link: '/products',
+      link: "/products",
       element: <ProductsPage />,
       id: 4,
     },
     {
-      link: '/products/:id',
+      link: "/products/:id",
       element: <ProductDetailsPage />,
       id: 5,
     },
     {
-      link: '/cart',
+      link: "/cart",
       element: <CartPage />,
       id: 6,
+    },
+    {
+      link: "/contacts",
+      element: <Contacts />,
+      id: 7,
     },
   ];
 
   const PRIVATE_ROUTES = [
     {
-      link: '/admin',
+      link: "/admin",
       element: <AdminPage />,
       id: 1,
     },
     {
-      link: '/edit/:id',
+      link: "/edit/:id",
       element: <EditProductPage />,
       id: 2,
     },
