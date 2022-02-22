@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Shizuru&display=swap');
+
+
+
+#navbar_color{
+    /* background-color: rgb(255, 255, 255, 0) */
+    background-image: url(https://images.wallpaperscraft.ru/image/single/zvezdnoe_nebo_oblaka_zakat_120716_2048x1152.jpg);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img{
+  width: 5vw;
+}
+#logo{
+  width: 9vw;
+  margin-top: 2vh;
+  margin-left: 1vh;
+}
+
+.logo{
+  width: 15vw;
+  margin-right: 15vw;
+}
+
+#button{
+  color: #E89417;
+}
