@@ -17,20 +17,12 @@
       "id": 2
     },
     {
-      "name": "3rfrfr",
-      "description": "ffre",
+      "name": "cars",
+      "description": "good",
       "price": null,
-      "picture": "ee",
-      "type": "ef",
+      "picture": "https://images.unsplash.com/photo-1586902197503-e71026292412?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "type": "avto",
       "id": 3
-    },
-    {
-      "name": "nico",
-      "description": "vfcds",
-      "price": null,
-      "picture": "fvrg",
-      "type": "rvfg",
-      "id": 4
     }
   ]
 }
