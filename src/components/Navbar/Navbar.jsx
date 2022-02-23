@@ -137,7 +137,7 @@ const Navbar = () => {
                 <Button
                   key={page.id}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block" }}
+                  sx={{ my: 2, color: "#ff9100", display: "block",fontSize:12,fontFamily: 'Monospace'}}
                 >
                   {page.name}
                 </Button>
@@ -147,7 +147,7 @@ const Navbar = () => {
             {/* ADMIN PANEL */}
             {email == ADMIN ? (
               <Link to="/admin">
-                <Button sx={{ my: 2, color: "white", display: "block" }}>
+                <Button sx={{ my: 2, color: "#ff9100", display: "block", fontSize:12,fontFamily: 'Monospace'}}>
                   ADMIN PANEL
                 </Button>
               </Link>
@@ -161,7 +161,7 @@ const Navbar = () => {
                 id="button"
                 variant="outlined"
                 color="error"
-                sx={{ my: 2, display: "block" }}
+                sx={{ my: 2, display: "block",fontFamily: 'Monospace' }}
                 onClick={handleLogout}
               >
                 Logout
@@ -174,7 +174,7 @@ const Navbar = () => {
                   id="button"
                   variant="outlined"
                   color="error"
-                  sx={{ my: 2, display: "block" }}
+                  sx={{ my: 2, display: "block",fontFamily: 'Monospace' }}
                   onClick={handleLogout}
                 >
                   Login

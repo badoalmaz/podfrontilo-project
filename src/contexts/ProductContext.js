@@ -1,6 +1,6 @@
-import axios from 'axios';
-import { createContext, useContext, useReducer } from 'react';
-import { ACTIONS, JSON_API_PRODUCTS } from '../helpers/consts';
+import axios from "axios";
+import { createContext, useContext, useReducer } from "react";
+import { ACTIONS, JSON_API_PRODUCTS } from "../helpers/consts";
 
 export const productContext = createContext();
 
@@ -26,7 +26,9 @@ const ProductContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
 
   const getProducts = async () => {
-    let { data } = await axios(JSON_API_PRODUCTS);
+    // let { data } = await axios(JSON_API_PRODUCTS);
+    let { data } = await axios(`${JSON_API_PRODUCTS}${window.location.search}`);
+
     dispatch({
       type: ACTIONS.GET_PRODUCTS,
       payload: data,
