@@ -1,36 +1,12 @@
 {
   "products": [
     {
-      "name": "ergree",
-      "description": "ferf",
+      "name": "12345678",
+      "description": "oijhugyftgubhjn",
       "price": null,
-      "picture": "erfer",
-      "type": "fe",
+      "picture": "okiugybhjn",
+      "type": "ijouytfcguhbj",
       "id": 1
-    },
-    {
-      "name": "ergreerg4rg",
-      "description": "ferfg4rg4",
-      "price": null,
-      "picture": "erfer",
-      "type": "g4gfe",
-      "id": 2
-    },
-    {
-      "name": "3rfrfr",
-      "description": "ffre",
-      "price": null,
-      "picture": "ee",
-      "type": "ef",
-      "id": 3
-    },
-    {
-      "name": "nico",
-      "description": "vfcds",
-      "price": null,
-      "picture": "fvrg",
-      "type": "rvfg",
-      "id": 4
     }
   ]
 }
