@@ -1,6 +1,6 @@
-import axios from 'axios';
-import { createContext, useContext, useReducer } from 'react';
-import { ACTIONS, JSON_API_PRODUCTS } from '../helpers/consts';
+import axios from "axios";
+import { createContext, useContext, useReducer } from "react";
+import { ACTIONS, JSON_API_PRODUCTS } from "../helpers/consts";
 
 export const productContext = createContext();
 
