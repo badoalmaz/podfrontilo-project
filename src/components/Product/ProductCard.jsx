@@ -9,8 +9,10 @@ import { useProducts } from '../../contexts/ProductContext';
 import { useNavigate } from 'react-router-dom';
 
 export default function MediaCard({ item }) {
+
   const {deleteProduct}=useProducts();
   const navigate=useNavigate();
+
 
 
 
@@ -31,10 +33,12 @@ export default function MediaCard({ item }) {
         </Typography>
       </CardContent>
       <CardActions>
+
         <Button size="small" onClick={()=>deleteProduct(item.id)}>DELETE</Button>
         <Button size="small"onClick={()=>navigate(`/edit/${item.id}`)}>EDIT</Button>
 
         <span onClick={()=>navigate(`/products/${item.id}`)}>more...</span>
+
       </CardActions>
     </Card>
   );

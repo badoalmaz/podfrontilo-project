@@ -9,15 +9,18 @@ import ProductCard from '../Product/ProductCard';
 const ProductList = () => {
   const { products, getProducts } = useProducts();
 
+
   const [searchParams,setSearchParams]= useSearchParams();
 
   const [search,setSearch]= useState(searchParams.get("q") ? searchParams.get("q"): "");
 
 
 
+
   useEffect(() => {
     getProducts();
   }, [searchParams]);
+
 
   useEffect(()=>{
     setSearchParams({
@@ -34,8 +37,15 @@ const ProductList = () => {
 
 
 
+  useEffect(() => {
+    setSearchParams({
+      q: search,
+    });
+  }, [search]);
+
   return (
     <>
+
     <TextField label="Search" variant="standard" sx={{ margin:"2vw",width:"35vw"}} value={search} onChange={(e)=>setSearch(e.target.value)}/>
     <Grid container spacing={6}>
       {products ? (
@@ -51,6 +61,7 @@ const ProductList = () => {
         </>
       )}
     </Grid>
+
     </>
   );
 };
