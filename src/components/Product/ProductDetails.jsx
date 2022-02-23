@@ -1,4 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { useEffect } from "react";
+
 import { useParams } from "react-router-dom";
 import { useProducts } from "../../contexts/ProductContext";
 
@@ -9,10 +11,11 @@ const ProductDetails = () => {
 	useEffect(() => {
 		getProductDetails(id);
 	}, [id]);
+
 	return (
 		<div style={{ display: "flex" }}>
 			<div>
-				<img src={productDetails.picture} alt="#" />{" "}
+				<img src={productDetails.picture} alt="" />
 			</div>
 			<div>
 				<h2>name:{productDetails.name}</h2>

@@ -1,9 +1,15 @@
-import { Box, Button, Grid, TextField } from '@mui/material';
+import { Box, Button, Grid, Stack, TextField } from '@mui/material';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useProducts } from '../../contexts/ProductContext';
 
+import "./styles/AddProduct.css"
+
+
+
+
 const AddProduct = () => {
+
   const { addProduct } = useProducts();
 
   const navigate = useNavigate();
@@ -35,12 +41,18 @@ const AddProduct = () => {
   };
 
   return (
-    <Box>
-      <center variant="h6" gutterBottom>
-        ADMIN PANEL
+    
+    
+    <Box sx={{bgcolor:"#ffe0b2", height:"100vh",padding:"20vh auto"}} >
+      <center variant="h6" gutterBottom >
+        <h2 sx={{fontFamily: 'Monospace'}}>
+        WELCOME, ADMIN! 
+        </h2>
+        <h3 >Let's add a new tour!</h3>
+        
       </center>
 
-      <Grid item xs={12} md={6} sx={{ margin: '10vh auto' }}>
+      <Grid  item xs={12} md={6} sx={{ margin: '10vh auto',boxShadow: 3,borderRadius: 3, bgcolor:"#ffcc80"}} >
         <form>
           <TextField
             fullWidth
@@ -49,6 +61,7 @@ const AddProduct = () => {
             variant="outlined"
             name="name"
             onChange={handleInp}
+            
           />
           <TextField
             fullWidth
@@ -81,21 +94,37 @@ const AddProduct = () => {
             variant="outlined"
             name="type"
             onChange={handleInp}
+
           />
-          <Button
-            variant="outlined"
-            size="large"
-            fullWidth
-            onClick={() => {
+
+          <Stack direction="row" spacing={2} sx={{bgcolor:"#880e4f"}}>
+           
+      
+            <Button id="button" sx={{bgcolor:"#263238",borderColor: 'error.main',fontFamily: 'Monospace'}} variant="outlined" color="error" size="large" fullWidth onClick={() => {
+
               addProduct(product);
+              
               navigate('/products');
-            }}
-          >
-            CREATE PRODUCT
-          </Button>
+              
+            }}>
+              CREATE PRODUCT
+               
+            </Button>
+           
+           
+          </Stack>
+
+          
+         
+          
+               
+     
+            
+          
         </form>
       </Grid>
     </Box>
+    
   );
 };
 
