@@ -9,6 +9,7 @@ import AuthPage from "./pages/AuthPage";
 import CartPage from "./pages/CartPage";
 import EditProductPage from "./pages/EditProductPage";
 import HomePage from "./pages/HomePage";
+import NotFoundPage from "./pages/NotFoundPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
 import ProductsPage from "./pages/ProductsPage";
 
@@ -50,6 +51,11 @@ const MainRoutes = () => {
       link: "/contacts",
       element: <Contacts />,
       id: 7,
+    },
+    {
+      link: "*",
+      element: <NotFoundPage />,
+      id: 8,
     },
   ];
 
