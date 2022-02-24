@@ -137,7 +137,7 @@ const Navbar = () => {
                 <Button
                   key={page.id}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "#ff9100", display: "block",fontSize:12,fontFamily: 'Monospace'}}
+                  sx={{ my: 2, color: "#ff9100", display: "block",fontSize:15,fontFamily: 'Monospace'}}
                 >
                   {page.name}
                 </Button>
@@ -147,7 +147,7 @@ const Navbar = () => {
             {/* ADMIN PANEL */}
             {email == ADMIN ? (
               <Link to="/admin">
-                <Button sx={{ my: 2, color: "#ff9100", display: "block", fontSize:12,fontFamily: 'Monospace'}}>
+                <Button sx={{ my: 2, color: "#ff9100", display: "block", fontSize:15,fontFamily: 'Monospace'}}>
                   ADMIN PANEL
                 </Button>
               </Link>
