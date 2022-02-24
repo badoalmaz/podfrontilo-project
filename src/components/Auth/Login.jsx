@@ -21,6 +21,7 @@ function Copyright(props) {
       color="text.secondary"
       align="center"
       {...props}
+      sx={{marginBottom:"0"}}
     >
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
@@ -49,24 +50,27 @@ export default function Login() {
   } = useAuth();
 
   return (
+    <Box sx={{bgcolor:"#fff3e0",padding:5}}>
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
+        
         <Box
           sx={{
-            marginTop: 8,
+            marginTop: 0,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+          <Avatar sx={{ m: 1, bgcolor: '#f57c00' }}>
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
             Sign in
           </Typography>
-          <Box component="form" noValidate sx={{ mt: 1 }}>
+          <Box component="form" noValidate >
             <TextField
               margin="normal"
               required
@@ -109,7 +113,7 @@ export default function Login() {
                 type="submit"
                 fullWidth
                 variant="contained"
-                sx={{ mt: 3, mb: 2 }}
+                sx={{ mt: 3, mb: 2,bgcolor:"#263238",borderColor: 'error.main',fontFamily: 'Monospace',color:"#f57c00"}}
                 onClick={handleLogin}
               >
                 Sign In
@@ -119,25 +123,26 @@ export default function Login() {
                 type="submit"
                 fullWidth
                 variant="contained"
-                sx={{ mt: 3, mb: 2 }}
+                sx={{ mt: 3, mb: 2, bgcolor:"#263238",borderColor: 'error.main',fontFamily: 'Monospace',color:"#f57c00"}}
                 onClick={handleSignUp}
               >
                 Sign Up
               </Button>
             )}
 
-            <Grid container>
+            <Grid container sx={{marginBottom:3}}>
               {/* <Grid item xs>
                 <Link href="#" variant="body2">
                   Forgot password?
                 </Link>
               </Grid> */}
-              <Grid item>
+              <Grid item >
                 {hasAccount ? (
                   <Link
                     href="#"
                     variant="body2"
                     onClick={() => setHasAccount(!hasAccount)}
+                    sx={{color:"#f57c00"}}
                   >
                     {"Don't have an account? Sign Up"}
                   </Link>
@@ -146,6 +151,7 @@ export default function Login() {
                     href="#"
                     variant="body2"
                     onClick={() => setHasAccount(!hasAccount)}
+                    sx={{color:"#f57c00"}}
                   >
                     {'Have an account? Sign In'}
                   </Link>
@@ -153,9 +159,11 @@ export default function Login() {
               </Grid>
             </Grid>
           </Box>
+          
         </Box>
         <Copyright sx={{ mt: 8, mb: 4 }} />
       </Container>
     </ThemeProvider>
+    </Box>
   );
 }
