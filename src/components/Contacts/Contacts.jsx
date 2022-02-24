@@ -6,6 +6,7 @@ import {
   Link,
   TextField,
   Typography,
+  ImageListItem,
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import "./Contacts.css";
@@ -15,7 +16,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 
 const style = {
-  width: "800px",
+  maxWidth: "800px",
   marginTop: "100px",
   background: "rgba(255, 255, 255, 0.1)",
   border: "3px solid #616161",
@@ -119,12 +120,15 @@ const Contacts = () => {
           </Card>
         </center>
       ) : (
-        <div>
+        <center>
           <Grid container maxWidth="lg">
-            <Grid item lg={6} sx={{ marginTop: "13vh" }}>
+            <Grid item lg={6} sx={{ marginTop: "10vh" }}>
               <Grid item lg={12}>
                 {" "}
-                <Typography className="grid-text" variant="h2">
+                <Typography
+                  sx={{ fontSize: "10vh" }}
+                  className="get_typography"
+                >
                   Get in Touch
                 </Typography>
               </Grid>
@@ -240,22 +244,26 @@ const Contacts = () => {
 
             <Grid item lg={6}>
               {itemData.map((item) => (
-                <img src={`${item.img}`} />
+                <ImageListItem>
+                  <img
+                    src={`${item.img}`}
+                    style={{ maxWidth: "700px", marginTop: "6vh" }}
+                  />
+                </ImageListItem>
               ))}
             </Grid>
           </Grid>
 
-          <center>
-            <Button
-              className="grid-button"
-              variant="contained"
-              color="warning"
-              onClick={() => setOpen(true)}
-            >
-              Get in Touch with us
-            </Button>
-          </center>
-        </div>
+          <Button
+            className="grid-button"
+            variant="contained"
+            color="warning"
+            onClick={() => setOpen(true)}
+            sx={{ marginTop: "-1vh", marginBottom: "6vh" }}
+          >
+            Get in Touch with us
+          </Button>
+        </center>
       )}
     </Grid>
   );

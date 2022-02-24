@@ -41,27 +41,14 @@ body {
   animation-iteration-count: infinite;
 }
 
-@keyframes img {
-  0% {
-    width: 230px;
-  }
-  50% {
-    width: 1180px;
-    background-color: rgb(49, 33, 53);
-  }
-  100% {
-    width: 230px;
+@media only screen and (max-width: 600px) {
+  .get_typography {
+    font-size: 9vh !important;
   }
 }
 
-@keyframes text {
-  0% {
-    color: rgb(255, 153, 0);
-  }
-  50% {
-    color: rgb(100, 39, 86);
-  }
-  100% {
-    color: rgb(255, 153, 0);
+@media only screen and (max-width: 468px) {
+  .get_typography {
+    font-size: 6vh !important;
   }
 }
