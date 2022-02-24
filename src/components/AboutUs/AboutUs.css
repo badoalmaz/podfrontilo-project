@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100;1,900&display=swap");
+
+a {
+  text-decoration: none;
+}
+
+.aboutUs {
+  width: 100vw;
+  height: 100vh;
+  background: url("https://static.tildacdn.com/tild3763-3535-4532-b134-303537383965/_1.jpg") !important;
+  background-position: bottom;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header-content {
+  margin-bottom: 50px;
+  color: rgb(241, 222, 198);
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 5vmin;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: rgb(226, 68, 68);
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.ctn {
+  padding: 8px 15px;
+  background: #f1b05b;
+  border-radius: 30px;
+  color: black;
+}
+
+section {
+  width: 80%;
+  margin: 80px auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: rgb(99, 81, 54);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* width: 100%; */
+  justify-content: space-between;
+}
+.row img {
+  height: 480px; /* Высота блока */
+  border: 2px solid rgb(238, 202, 126); /* Параметры рамки */
+  background: 100% 100% no-repeat; /* Добавляем фон */
+  background-size: cover; /* Масштабируем фон */
+}
+
+.row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -1vw;
+  width: 505px;
+}
+
+.events .row {
+  margin-top: 30px;
+}
+
+.explore {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://i.ytimg.com/vi/1hJSzJSj4GU/maxresdefault.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.explore-content {
+  width: 60%;
+  padding: 50px;
+  color: #f1ebe8;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.explore-content h1 {
+  font-size: 7vmin;
+}
+
+.explore-content .line {
+  margin-bottom: 50px;
+}
+
+.explore-content p {
+  color: whitesmoke;
+  font-size: large;
+  align-items: center;
+}
+
+.explore-content .ctn {
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 3vmin;
+  color: rgb(119, 98, 71);
+  margin: 20px auto;
+}
+
+p {
+  color: #2a2b26;
+  padding: 0px 40px;
+  /* width: 95vh; */
+  text-align: center;
+}
+
+.events .ctn {
+  margin-top: 40px;
+}
+
+.row .col img {
+  width: 80%;
+}
+.rower {
+  align-items: center;
+}
+.colname {
+  margin-left: 10vw;
+}
+
+.ctn2 {
+  padding: 8px 15px;
+  background: #c7aa84;
+  border-radius: 30px;
+  color: black;
+  margin-left: 30vw;
+}
+
+.col .content-col {
+  margin-bottom: 50px;
+  color: rgb(241, 222, 198);
+  text-align: center;
+  justify-content: center;
+}
+
+.tours .row .col {
+  width: 50%;
+}
+
+.content-col h1 {
+  font-size: 7vmin;
+  color: #5b72be;
+}
+
+.content-col .line {
+  align-items: center;
+}
+
+.content-col p {
+  padding: 0;
+  margin: 30px auto;
+}
+
+.content-col .ctn {
+  margin-left: -100px;
+}
+
+.videos {
+  transform: translateX(-135px);
+  display: flex;
+  overflow-x: scroll;
+  width: 100vw;
+  background-image: linear-gradient(147deg, #999000 0%, #ff000000 74%);
+}
+
+.videos::-webkit-scrollbar {
+  height: 100px;
+  background-color: rgb(32, 90, 179);
+  outline: none;
+}
+
+.videos::-webkit-scrollbar {
+  height: 10px;
+  outline: none;
+}
+
+iframe:last-child {
+  padding-right: 20px;
+}
+
+.videos::-webkit-scrollbar {
+  border-radius: 0;
+  background: white;
+}
+.row .col {
+  display: flex;
+}
+
+@media only screen and(max-width:850px) {
+  /* event */
+  .row {
+    flex-direction: column !important;
+  }
+  #content {
+    background: red;
+  }
+
+  .row .col {
+    margin: 20px auto;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+  .col img {
+    max-width: 90%;
+  }
+
+  .explore-content {
+    width: 100%;
+  }
+  .col .content-col {
+    width: 100%;
+  }
+  .col .image-col {
+    justify-content: center;
+    align-items: center;
+  }
+  .image-col img {
+    width: 90%;
+  }
+  .footer {
+    padding: 10px;
+  }
+  videos::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ANimation */
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+ctn:hover {
+  background: #f1ebe8;
+  color: aqua;
+  box-shadow: 2px 2px 5px black;
+}
