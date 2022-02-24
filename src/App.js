@@ -7,14 +7,14 @@ import MainRoutes from './MainRoutes';
 function App() {
   return (
     <>
-      <AuthContextProvider>
-        <ProductContextProvider>
-          <BrowserRouter>
+      <BrowserRouter>
+        <AuthContextProvider>
+          <ProductContextProvider>
             <Navbar />
             <MainRoutes />
-          </BrowserRouter>
-        </ProductContextProvider>
-      </AuthContextProvider>
+          </ProductContextProvider>
+        </AuthContextProvider>
+      </BrowserRouter>
     </>
   );
 }
