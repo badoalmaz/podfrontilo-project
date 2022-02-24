@@ -1,196 +1,197 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 .home {
-	text-align: center;
-	background-repeat: no-repeat;
-	height: 100vh;
-	width: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
 }
 
 .home .text-wrapper {
-	padding: 20px;
-	margin-top: 80px;
-	max-width: 50%;
+  padding: 20px;
+  margin-top: 80px;
+  max-width: 50%;
 }
 
 .home .text-wrapper h1 {
-	color: #fff;
-	font-family: "Montserrat", sans-serif;
-	font-style: bold;
-	font-size: 50px;
-	letter-spacing: 3px;
-	text-transform: uppercase;
-	/* opacity: 60%; */
-	text-align: left;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-style: bold;
+  font-size: 50px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  text-align: left;
 }
 
 .home video {
-	position: absolute;
-	z-index: -2;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	object-fit: cover;
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 .content-text {
-	height: auto;
+  height: auto;
 }
 .content-text h3 {
-	font-family: "Montserrat", sans-serif;
-	font-size: 30px;
-	position: relative;
-	color: #000;
-	text-align: center;
-	margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  position: relative;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .content-text p {
-	font-size: 16px;
-	font-family: "Montserrat", sans-serif;
-	font-style: italic;
-	line-height: 160%;
-	letter-spacing: 1px;
-	color: #000;
-	margin: 0 auto;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  line-height: 160%;
+  letter-spacing: 1px;
+  color: #000;
+  margin: 0 auto;
 }
 
 .content-item a {
-	color: #000;
-	font-size: 18px;
-	font-style: italic;
+  color: #000;
+  font-size: 18px;
+  font-style: italic;
 }
 
 .content-iitem-icon {
-	margin-top: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
-	background-color: #000;
-	min-height: 1500px;
-	margin-top: 50px;
+  background-color: #000;
+  min-height: 1500px;
+  margin-top: 50px;
 }
 .imgs {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: space-around;
-	margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
 }
 
 .ornament {
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 50%;
-	align-items: center;
-	text-align: center;
-	margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 50%;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
 }
 .ornament img {
-	margin: 0 auto;
-	width: 300px;
+  margin: 0 auto;
+  width: 300px;
 }
 .ornament p {
-	color: #e89417;
-	font-size: 42px;
-	display: flex;
-	flex-wrap: nowrap;
-	text-align: center;
-	margin: 20px;
-	/* position: relative; */
+  color: #e89417;
+  font-size: 42px;
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  margin: 20px;
 
-	font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .reasons {
-	max-width: 850px;
-	height: 550px;
-	background-color: #e89417;
-	padding-top: 15px;
-	margin: -50px auto;
-	left: 25%;
-	border-radius: 20px;
+  max-width: 850px;
+  height: 600px;
+  background-color: #e89417;
+  padding-top: 15px;
+  margin: -50px auto;
+  margin-bottom: 15px;
+  left: 25%;
+  border-radius: 20px;
 }
 .reasons h4 {
-	text-align: center;
-	font-family: "Montserrat", sans-serif;
-	/* padding-left: 200px; */
-	font-size: 18px;
-	margin-top: 30px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 18px;
+  margin-top: 30px;
 }
 
-/* media screen */
-
 @media screen and (max-width: 999px) {
-	.home .text-wrapper h1 {
-		font-size: 40px;
-	}
-	.text-wrapper .text-wrapper-span {
-		font-size: 70px !important;
-	}
+  .home .text-wrapper h1 {
+    font-size: 40px;
+  }
+  .text-wrapper .text-wrapper-span {
+    font-size: 70px !important;
+  }
 }
 
 @media screen and (max-width: 840px) {
-	.home .text-wrapper h1 {
-		font-size: 30px;
-	}
-	.text-wrapper .text-wrapper-span {
-		font-size: 60px !important;
-	}
-	.reasons {
-		margin: -30% auto;
-	}
+  .home .text-wrapper h1 {
+    font-size: 30px;
+  }
+  .text-wrapper .text-wrapper-span {
+    font-size: 60px !important;
+  }
+  .reasons {
+    display: none;
+  }
+  .header {
+    min-height: 100px;
+  }
 }
 
 @media screen and (max-width: 666px) {
-	.home .text-wrapper h1 {
-		font-size: 20px;
-	}
-	.text-wrapper .text-wrapper-span {
-		font-size: 50px !important;
-	}
-	.reasons {
-		margin: -60% auto;
-	}
+  .home .text-wrapper h1 {
+    font-size: 20px;
+  }
+  .text-wrapper .text-wrapper-span {
+    font-size: 50px !important;
+  }
+  .reasons {
+    margin: -60% auto;
+  }
 }
 
 @media screen and (max-width: 560px) {
-	.reasons {
-		margin: -90% auto;
-	}
+  .reasons {
+    margin: -90% auto;
+  }
 }
 
 @media screen and (max-width: 500px) {
-	.home .text-wrapper h1 {
-		font-size: 15px;
-	}
-	.text-wrapper .text-wrapper-span {
-		font-size: 35px !important;
-	}
-	.ornament p {
-		font-size: 30px;
-		text-align: center;
-	}
-	.ornament img {
-		width: 210px;
-	}
-	.reasons {
-		margin: -130% auto;
-	}
+  .home .text-wrapper h1 {
+    font-size: 15px;
+  }
+  .text-wrapper .text-wrapper-span {
+    font-size: 35px !important;
+  }
+  .ornament p {
+    font-size: 30px;
+    text-align: center;
+  }
+  .ornament img {
+    width: 210px;
+  }
+  .reasons {
+    margin: -130% auto;
+  }
 }
 
 @media screen and (max-width: 460px) {
-	.ornament p {
-		font-size: 20px;
-	}
-	.reasons {
-		margin: -160% auto;
-	}
+  .ornament p {
+    font-size: 20px;
+  }
+  .reasons {
+    margin: -160% auto;
+  }
 }
