@@ -3,7 +3,7 @@
     {
       "name": "Hiking $ Trecking",
       "description": "Ala-Archa National Park ",
-      "price": null,
+      "price": "200",
       "picture": "http://feelnomad.com/wp-content/uploads/2019/10/Ala-archa-park-2-675x450.jpg",
       "type": "nature",
       "id": 17
@@ -19,7 +19,7 @@
     {
       "name": "Jeep $ motorbike ",
       "description": "The roud around Too Ashu, Kazarman and etc.",
-      "price": null,
+      "price": "500",
       "picture": "https://triptokyrgyzstan.com/sites/default/files/images/2019-03/12783621_1664200787177583_776377640883211159_o.jpg",
       "type": "adventure",
       "id": 21
