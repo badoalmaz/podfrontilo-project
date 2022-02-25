@@ -1,46 +1,44 @@
-import {
+import { 
   FormControl,
   FormControlLabel,
-  FormLabel,
+  FormLabel, 
   Grid,
   Paper,
-  Radio,
-  RadioGroup,
-} from '@mui/material';
-
+  Radio, 
+  RadioGroup } from '@mui/material';
 import React from 'react';
 import { useProducts } from '../../contexts/ProductContext';
+import './SideBar.css'
+
+
 
 const SideBar = () => {
-  const { fetchByParams } = useProducts();
-  return (
-    <Grid>
+  const {fetchByParams} = useProducts();
+  return  <Grid>
       <Paper>
-        <FormControl>
-          <FormLabel>TYPE</FormLabel>
+          <FormControl>
+              
 
-          <RadioGroup onChange={(e) => fetchByParams('type', e.target.value)}>
-            <FormControlLabel
-              value="cultural"
-              control={<Radio />}
-              label="cultural"
-            />
-            <FormControlLabel
-              value="medical"
-              control={<Radio />}
-              label="medical"
-            />
-            <FormControlLabel
-              value="culinary"
-              control={<Radio />}
-              label="culinary"
-            />
-            <FormControlLabel value="all" control={<Radio />} label="all" />
-          </RadioGroup>
-        </FormControl>
+              <RadioGroup 
+              className='side-bar'
+              onChange={(e)=>fetchByParams('type', e.target.value)}>
+                  <h5 className='choose-type'>TYPE</h5>
+                  <FormControlLabel value="adventure" control={<Radio/>} label='ADVENTURE'/>
+                  <FormControlLabel value="cultural" control={<Radio/>} label='CULTURAL'/>
+                  <FormControlLabel value="historical" control={<Radio/>} label='HISTORICAL'/>
+                  <FormControlLabel value="nature" control={<Radio/>} label='NATURE'/>
+
+                  <FormControlLabel value="all" control={<Radio/>} label='ALL'/>
+
+
+             </RadioGroup>
+          </FormControl>
       </Paper>
-    </Grid>
-  );
+  </Grid>
+
+          
+      
+  
 };
 
 export default SideBar;

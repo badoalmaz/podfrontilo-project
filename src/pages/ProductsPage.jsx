@@ -1,16 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import ReactPaginate from 'react-paginate';
-import { useLocation } from 'react-router-dom';
-import ProductList from '../components/Product/ProductList';
-import { useProducts } from '../contexts/ProductContext';
-import './pages.css';
+import React, { useEffect, useState } from "react";
+import ReactPaginate from "react-paginate";
+import { useLocation } from "react-router-dom";
+import ProductList from "../components/Product/ProductList";
+import { useProducts } from "../contexts/ProductContext";
+import ArrowCircleRightSharpIcon from "@mui/icons-material/ArrowCircleRightSharp";
+import ArrowCircleLeftSharpIcon from "@mui/icons-material/ArrowCircleLeftSharp";
+
+import "./Pages.css";
 
 const ProductsPage = () => {
   const { products, getProducts } = useProducts();
   const [page, setPage] = useState(0);
 
-  const productPerPage = 8;
-
+  const productPerPage = 6;
   const location = useLocation();
 
   const pageCount = Math.ceil(products.length / productPerPage);
@@ -21,7 +23,6 @@ const ProductsPage = () => {
     pageVisited,
     pageVisited + productPerPage
   );
-
   const changePage = ({ selected }) => {
     setPage(selected);
   };
@@ -34,8 +35,8 @@ const ProductsPage = () => {
     <div>
       <ProductList products={paginateProducts} />
       <ReactPaginate
-        previousLabel="< previous"
-        nextLabel="next >"
+        previousLabel={<ArrowCircleLeftSharpIcon />}
+        nextLabel={<ArrowCircleRightSharpIcon />}
         onPageChange={changePage}
         pageRangeDisplayed={5}
         pageCount={pageCount}
@@ -44,7 +45,7 @@ const ProductsPage = () => {
         previousLinkClassName="previousBtn"
         nextLinkClassName="nextBtn"
         activeClassName="activeBtn"
-        disabledClassName="disabledBtn"
+        disableClassName="disabled"
       />
     </div>
   );

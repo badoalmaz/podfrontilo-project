@@ -1,0 +1,14 @@
+.card {
+  width: 380px;
+  height: 460px;
+  background-color: #e89417;
+  border: 10px solid #e89417;
+  border-radius: 10px;
+}
+
+.basket {
+  width: 240px;
+  margin-right: 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
