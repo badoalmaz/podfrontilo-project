@@ -19,10 +19,10 @@
   pointer-events: none;
 }
 
-.blog-left {
+/* .blog-left {
   max-width: 850px;
-  /* padding-left: 250px; */
-}
+  padding-left: 250px;
+} */
 
 .text-field label {
   color: #e89417;

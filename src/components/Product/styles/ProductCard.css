@@ -1,9 +1,10 @@
-.card {
-  width: 380px;
-  height: 460px;
+.cardProduct {
+  width: 400px;
+  height: 480px;
   background-color: #e89417;
   border: 10px solid #e89417;
   border-radius: 10px;
+  /* font-size: 20px; */
 }
 
 .basket {
