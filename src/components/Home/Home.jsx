@@ -66,7 +66,7 @@ const Home = () => {
       <div className="header">
         <div className="ornament">
           <img src={ornament} alt="#" />
-          <p>10 REASONS TO VISIT KYRGHYZSTAN</p>
+          <p>10 REASONS TO VISIT KYRGYZSTAN</p>
         </div>
 
         <div className="imgs">

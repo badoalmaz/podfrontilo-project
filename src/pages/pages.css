@@ -6,22 +6,23 @@
   bottom: 0;
   height: 50px;
   list-style-type: none;
+  margin: 0 auto;
 }
 
 .pagination a {
   padding: 10px;
   margin: 5px;
   text-decoration: none;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .pagination a:hover {
-  background-color: antiquewhite;
+  background-color: black;
+  color: white;
 }
 
 .activeBtn a {
-  background-color: coral;
-  color: white;
+  background-color: #e89417;
 }
