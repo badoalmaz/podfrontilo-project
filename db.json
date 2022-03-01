@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "name": "Hiking $ Trecking",
+      "name": "Hiking $ Trecking134256",
       "description": "Ala-Archa National Park ",
       "price": "200",
       "picture": "http://feelnomad.com/wp-content/uploads/2019/10/Ala-archa-park-2-675x450.jpg",
@@ -9,140 +9,28 @@
       "id": 17
     },
     {
-      "name": "Cycling",
-      "description": "Road around Issyk-Kul lake,  Bishkek-Osh highways.",
+      "name": "htrt",
+      "description": "ergte",
       "price": null,
-      "picture": "https://www.lakedistrict.gov.uk/__data/assets/image/0026/109394/hd_mountain_biking_whinlatt.jpg",
-      "type": "adventure",
-      "id": 19
+      "picture": "erge",
+      "type": "ergte",
+      "id": 51
     },
     {
-      "name": "Jeep $ motorbike ",
-      "description": "The roud around Too Ashu, Kazarman and etc.",
-      "price": "500",
-      "picture": "https://triptokyrgyzstan.com/sites/default/files/images/2019-03/12783621_1664200787177583_776377640883211159_o.jpg",
-      "type": "adventure",
-      "id": 21
-    },
-    {
-      "name": "Horseriding",
-      "description": "Trails go  landscapes of Tien Shan and Pamir.",
+      "name": "iskak",
+      "description": "gtg",
       "price": null,
-      "picture": "https://strannik.kg/assets/cache_image/upload/img/horse_tour_12_1920x1080_1ac.jpg",
-      "type": "adventure",
-      "id": 23
+      "picture": "ergt",
+      "type": "egt",
+      "id": 52
     },
     {
-      "name": "Holidays in Jayloo",
-      "description": "Going on a jailoo trip of old kyrgyz nomadic culture.",
+      "name": "sadfrdg",
+      "description": "ergfeg",
       "price": null,
-      "picture": "https://cdn.odysseytraveller.com/app/uploads/2019/07/A-yurt-in-the-mountains-of-Kyrgyzstan.jpg",
-      "type": "cultural",
-      "id": 24
-    },
-    {
-      "name": "Koumiss Treatment",
-      "description": "Koumiss  treatment is a developing form of health.",
-      "price": null,
-      "picture": "https://jyrgalan.com/wp-content/uploads/2017/10/Kyrgyz_Kymyz.jpg",
-      "type": "cultural",
-      "id": 25
-    },
-    {
-      "name": "Food $ Drink",
-      "description": " Kyrgyz food dominated by meat and dairy products.",
-      "price": null,
-      "picture": "https://pbs.twimg.com/media/EcK8bSpXkAEm1CV?format=jpg&name=small",
-      "type": "cultural",
-      "id": 26
-    },
-    {
-      "name": "Hunting with Eagle",
-      "description": "The place of real hungting with birds of prey.",
-      "price": null,
-      "picture": "https://theplanetd.com/images/Eagle-Hunters-Kyrgyzstan-12.jpg",
-      "type": "cultural",
-      "id": 27
-    },
-    {
-      "name": "Whitewater Rafting $ Kayaking ",
-      "description": "You should definitely try white water rafting.",
-      "price": null,
-      "picture": "https://triptokyrgyzstan.com/sites/default/files/images/2019-03/river-rafting-at-cangrejal.jpg",
-      "type": "adventure",
-      "id": 28
-    },
-    {
-      "name": "Skiing $ Snowboarding",
-      "description": "There are more than ten ski resorts for visitors. ",
-      "price": null,
-      "picture": "https://i0.wp.com/nomads-yurt.com/wp-content/uploads/2019/11/Skiing_Winter_Men_Snow_Sun_Helmet_Jacket_514545_1280x853.jpg?fit=1280%2C853&ssl=1",
-      "type": "adventure",
-      "id": 29
-    },
-    {
-      "name": "World Nomad Games",
-      "description": "World Nomads Games is one of the major tourism",
-      "price": "from 980 $",
-      "picture": "https://st4.depositphotos.com/9597332/21355/i/600/depositphotos_213556884-stock-photo-lake-issyk-kul-kyrgyzstan-5th.jpg",
-      "type": "cultural",
-      "id": 30
-    },
-    {
-      "name": "Great Silk Road",
-      "description": "You can follow the routes of the Great Silk Road.",
-      "price": null,
-      "picture": "https://www.baibol.kg/img/attraction_gallery/152413637249195.jpg",
-      "type": "historical",
-      "id": 31
-    },
-    {
-      "name": "Burana Tower ",
-      "description": "The most amazing sights of Chui valley in one day!",
-      "price": null,
-      "picture": "https://i1.wp.com/drunkyhorse.com/wp-content/uploads/2018/11/RHRM0288.jpg?fit=1200%2C800&ssl=1",
-      "type": "h",
-      "id": 32
-    },
-    {
-      "name": "Osh City walking tour",
-      "description": " Osh is a city with over 3000 years of history.",
-      "price": null,
-      "picture": "https://kalpak-travel.com/wp-content/uploads/2017/04/kyrgyzstan-osh-suleiman-mountain.jpg",
-      "type": "historical",
-      "id": 33
-    },
-    {
-      "name": "Arslanbob",
-      "description": " 6080 square m-s of natural walnut forest territory.",
-      "price": null,
-      "picture": "https://mapio.net/images-p/10905650.jpg",
-      "type": "nature",
-      "id": 34
-    },
-    {
-      "name": "The Lake Sary-Chelek",
-      "description": "Sary Chelek is the third deepest lake of CA.",
-      "price": 0,
-      "picture": "https://www.centralasia-travel.com/upload/tiles/sary-chelek.jpg",
-      "type": "nature",
-      "id": 35
-    },
-    {
-      "name": "The Lake Issyk-Kul",
-      "description": "It is the second-largest mountain lake in the world.",
-      "price": 0,
-      "picture": "https://sitara.com/upload/iblock/3a8/3a8e8cc3528982e2d2475db7576540c6.JPG",
-      "type": "nature",
-      "id": 36
-    },
-    {
-      "name": "Mountaineering",
-      "description": "Trails go through the virgin Tien Shan, Pamir.",
-      "price": 0,
-      "picture": "https://www.kyrgyzstantravel.com/cdn/kg-public/young_woman_enjoys_spectacular_view_to_high_mountains.jpg",
-      "type": "nature",
-      "id": 37
+      "picture": "drger",
+      "type": "dgbv",
+      "id": 53
     }
   ]
 }

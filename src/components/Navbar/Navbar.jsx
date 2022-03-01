@@ -1,29 +1,31 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import { Link } from 'react-router-dom';
-import { useAuth } from '../../contexts/AuthContext';
-import { ADMIN } from '../../helpers/consts';
-import './Navbar.css';
-import Logo from '../assets/images/NOMAD.svg';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import { Badge } from '@mui/material';
-import { useProducts } from '../../contexts/ProductContext';
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import Tooltip from "@mui/material/Tooltip";
+import MenuItem from "@mui/material/MenuItem";
+import { Link } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext";
+import { ADMIN } from "../../helpers/consts";
+import "./Navbar.css";
+import Logo from "../assets/images/NOMAD.svg";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+
+import { Badge } from "@mui/material";
+
+import { useProducts } from "../../contexts/ProductContext";
 
 const pages = [
-  { name: 'PRODUCTS', link: '/products', id: 1 },
-  { name: 'ABOUT US', link: '/aboutus', id: 2 },
-  { name: 'CONTACTS', link: '/contacts', id: 3 },
+  { name: "PRODUCTS", link: "/products", id: 1 },
+  { name: "ABOUT US", link: "/aboutus", id: 2 },
+  { name: "CONTACTS", link: "/contacts", id: 3 },
 ];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -62,19 +64,18 @@ const Navbar = () => {
               variant="h6"
               noWrap
               component="div"
-              sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+              sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
             >
               <img
                 src="https://www.nomadsland.ch/sites/default/files/icons/nomadspirit.svg"
                 alt=""
-              />{' '}
+              />{" "}
               <span>
                 <img id="logo" src={Logo} alt="" />
               </span>
             </Typography>
           </Link>
-
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -89,18 +90,18 @@ const Navbar = () => {
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
+                vertical: "bottom",
+                horizontal: "left",
               }}
               keepMounted
               transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
+                vertical: "top",
+                horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: "block", md: "none" },
               }}
             >
               {pages.map((page) => (
@@ -126,7 +127,7 @@ const Navbar = () => {
               variant="h6"
               noWrap
               component="div"
-              sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
+              sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
             >
               <img className="logo" src={Logo} alt="" />
             </Typography>
@@ -134,7 +135,7 @@ const Navbar = () => {
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: 'none', md: 'flex', justifyContent: 'center' },
+              display: { xs: "none", md: "flex", justifyContent: "center" },
             }}
           >
             {pages.map((page) => (
@@ -144,10 +145,10 @@ const Navbar = () => {
                   onClick={handleCloseNavMenu}
                   sx={{
                     my: 2,
-                    color: '#ff9100',
-                    display: 'block',
+                    color: "#ff9100",
+                    display: "block",
                     fontSize: 15,
-                    fontFamily: 'Monospace',
+                    fontFamily: "Monospace",
                   }}
                 >
                   {page.name}
@@ -159,20 +160,20 @@ const Navbar = () => {
             {email == ADMIN ? (
               <Link to="/admin">
                 <Button
-                  sx={{
-                    my: 2,
-                    color: '#ff9100',
-                    display: 'block',
-                    fontSize: 15,
-                    fontFamily: 'Monospace',
-                  }}
+                // sx={{
+                //   my: 2,
+                //   color: "#ff9100",
+                //   display: "block",
+                //   fontSize: 15,
+                //   fontFamily: "Monospace",
+                // }}
                 >
                   ADMIN PANEL
                 </Button>
               </Link>
             ) : (
               <Link to="/cart">
-                <Button sx={{ my: 2, color: 'white' }}>
+                <Button sx={{ my: 2, color: "white" }}>
                   <Badge
                     badgeContent={cart?.products ? cart.products.length : 0}
                     color="secondary"
@@ -185,13 +186,13 @@ const Navbar = () => {
             {/* ADMIN PANEL */}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          {/* <Box sx={{ flexGrow: 0 }}>
             {email ? (
               <Button
                 id="button"
                 variant="outlined"
                 color="error"
-                sx={{ my: 2, display: 'block', fontFamily: 'Monospace' }}
+                sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
                 onClick={handleLogout}
               >
                 Logout
@@ -204,14 +205,14 @@ const Navbar = () => {
                   id="button"
                   variant="outlined"
                   color="error"
-                  sx={{ my: 2, display: 'block', fontFamily: 'Monospace' }}
+                  sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
                   onClick={handleLogout}
                 >
                   Login
                 </Button>
               </Link>
             )}
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>
