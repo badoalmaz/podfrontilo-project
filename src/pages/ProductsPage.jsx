@@ -37,7 +37,7 @@ const ProductsPage = () => {
       <ReactPaginate
         previousLabel={<ArrowCircleLeftSharpIcon />}
         nextLabel={<ArrowCircleRightSharpIcon />}
-        onPageChange={changePage}
+        // onPageChange={changePage}
         pageRangeDisplayed={5}
         pageCount={pageCount}
         renderOnZeroPageCount={null}

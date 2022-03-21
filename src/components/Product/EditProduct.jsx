@@ -1,8 +1,8 @@
-import { Box, Button, Grid, Stack, TextField } from '@mui/material';
-import React, { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import { useProducts } from '../../contexts/ProductContext';
-import './styles/AddProduct.css';
+import { Box, Button, Grid, Stack, TextField } from "@mui/material";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { useProducts } from "../../contexts/ProductContext";
+import "./styles/AddProduct.css";
 
 const EditProduct = () => {
   const { id } = useParams();
@@ -12,12 +12,13 @@ const EditProduct = () => {
     useProducts();
 
   const [product, setProduct] = useState({
-    name: '',
-    description: '',
+    name: "",
+    description: "",
     price: 0,
-    picture: '',
-    type: '',
+    picture: "",
+    type: "",
   });
+  // console.log(product);
 
   const handleInput = (e, product, setProduct) => {
     let obj = {
@@ -26,6 +27,7 @@ const EditProduct = () => {
     };
     setProduct(obj);
   };
+  // console.log(product);
 
   useEffect(() => {
     getProductDetails(id);
@@ -37,7 +39,7 @@ const EditProduct = () => {
 
   return (
     <div>
-      <Box sx={{ bgcolor: '#ffe0b2', height: '100vh', padding: '20vh auto' }}>
+      <Box sx={{ bgcolor: "#ffe0b2", height: "100vh", padding: "20vh auto" }}>
         <center variant="h6" gutterBottom>
           EDIT PRODUCT
         </center>
@@ -47,10 +49,10 @@ const EditProduct = () => {
           xs={12}
           md={6}
           sx={{
-            margin: '10vh auto',
+            margin: "10vh auto",
             boxShadow: 3,
             borderRadius: 3,
-            bgcolor: '#ffcc80',
+            bgcolor: "#ffcc80",
           }}
         >
           <form>
@@ -71,7 +73,7 @@ const EditProduct = () => {
               variant="outlined"
               name="description"
               onChange={(e) => handleInput(e, product, setProduct)}
-            />{' '}
+            />{" "}
             <TextField
               value={product.price}
               fullWidth
@@ -80,7 +82,7 @@ const EditProduct = () => {
               variant="outlined"
               name="price"
               onChange={(e) => handleInput(e, product, setProduct)}
-            />{' '}
+            />{" "}
             <TextField
               value={product.picture}
               fullWidth
@@ -99,13 +101,13 @@ const EditProduct = () => {
               name="type"
               onChange={(e) => handleInput(e, product, setProduct)}
             />
-            <Stack direction="row" spacing={2} sx={{ bgcolor: '#880e4f' }}>
+            <Stack direction="row" spacing={2} sx={{ bgcolor: "#880e4f" }}>
               <Button
                 id="button"
                 sx={{
-                  bgcolor: '#263238',
-                  borderColor: 'error.main',
-                  fontFamily: 'Monospace',
+                  bgcolor: "#263238",
+                  borderColor: "error.main",
+                  fontFamily: "Monospace",
                 }}
                 color="error"
                 variant="outlined"
@@ -113,7 +115,7 @@ const EditProduct = () => {
                 fullWidth
                 onClick={() => {
                   saveEditedProduct(product);
-                  navigate('/products');
+                  navigate("/products");
                 }}
               >
                 EDIT PRODUCT

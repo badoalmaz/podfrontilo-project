@@ -57,7 +57,6 @@ const ProductList = ({ products }) => {
           {products ? (
             products.map((item) => (
               <Grid item>
-                {/* <ProductCard item={item} key={item.id} /> */}
                 <MediaCard item={item} key={item.id} />
               </Grid>
             ))
